@@ -5,7 +5,8 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGoogle \
     RepainterServicePriv \
     GameSpace \
-    TouchGestures
+    TouchGestures \
+    PixysThemesStub
 
 ifneq ($(BUILD_WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
