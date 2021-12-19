@@ -98,6 +98,7 @@
         <item>device_personalization_services/NotificationAssistant__max_importance_variance=0.5</item>
 
         <!-- Now Playing (Pixel 2017) -->
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=194:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20211212-030112/manifest.json</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_enabled=true</item>
         <item>device_personalization_services/NowPlaying__cloud_api_allowed=true</item>
         <item>device_personalization_services/NowPlaying__enable_usage_fa=true</item>
