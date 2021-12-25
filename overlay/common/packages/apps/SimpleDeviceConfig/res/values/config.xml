@@ -120,5 +120,11 @@
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_fa=false</item>
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_min_training_interval=false</item>
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_non_synthetic_logs=false</item>
+
+        <!-- Enable live translate -->
+        <item>device_personalization_services/Translate__blue_chip_translate_enabled=true</item>
+        <item>device_personalization_services/Translate__copy_to_translate_enabled=true</item>
+        <item>device_personalization_services/Translate__replace_auto_translate_copied_text_enabled=true</item>
+        <item>device_personalization_services/Translate__translation_service_enabled=true</item>
     </string-array>
 </resources>
