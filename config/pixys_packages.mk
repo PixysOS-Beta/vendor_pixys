@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     Updater \
     NoCutoutOverlay \
-    AvoidAppsInCutoutOverlay
+    AvoidAppsInCutoutOverlay \
+    SettingsIntelligenceGooglePrebuilt
 
 ifneq ($(BUILD_WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
