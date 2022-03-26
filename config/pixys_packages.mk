@@ -1,6 +1,5 @@
 # PixysOS packages
 PRODUCT_PACKAGES += \
-    Updater \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay \
     SettingsIntelligenceGooglePrebuilt
@@ -26,20 +25,10 @@ PRODUCT_PACKAGES += \
 # Extra tools in Pixys
 PRODUCT_PACKAGES += \
     7z \
-    awk \
     bash \
-    bzip2 \
-    curl \
-    getcap \
     htop \
-    lib7z \
-    libsepol \
     nano \
     pigz \
-    powertop \
-    setcap \
-    unrar \
-    unzip \
     vim \
     zip
 
