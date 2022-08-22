@@ -1,3 +1,4 @@
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    ImmersiveNavigationOverlay
