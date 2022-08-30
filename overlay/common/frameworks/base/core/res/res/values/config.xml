@@ -77,6 +77,36 @@
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
 
+    <!-- Controls whether system buttons use all caps for text -->
+    <bool name="config_buttonTextAllCaps">false</bool>
+
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
+
+    <!-- Flag indicating whether the volume panel should show remote sessions. -->
+    <bool name="config_volumeShowRemoteSessions">false</bool>
+
+    <!-- Corner radius for bottom sheet system dialogs -->
+    <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
+
+    <!-- Corner radius of system buttons -->
+    <dimen name="config_buttonCornerRadius">4.0dip</dimen>
+
+    <!-- Corner radius of system dialogs -->
+    <dimen name="config_dialogCornerRadius">28.0dip</dimen>
+
+    <!-- Corner radius of system progress bars -->
+    <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
+
+    <!-- Default number of days to retain for the automatic storage manager. -->
+    <integer name="config_storageManagerDaystoRetainDefault">60</integer>
+
     <!-- Whether or not to add a "people" notifications section -->
     <bool name="config_usePeopleFiltering">true</bool>
 
