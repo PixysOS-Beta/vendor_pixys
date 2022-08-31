@@ -5,11 +5,11 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGoogle \
     RepainterServicePriv \
     GameSpace \
-    TouchGestures \
-    PixysThemesStub
+    TouchGestures
 
 ifneq ($(BUILD_WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
+    PixysThemesStub \
     ThemePicker \
     Launcher3QuickStep
 endif
