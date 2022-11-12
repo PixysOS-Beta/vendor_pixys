@@ -169,4 +169,7 @@ $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
+# Inherit from apex config
+$(call inherit-product, vendor/pixys/config/pixys_apex.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
