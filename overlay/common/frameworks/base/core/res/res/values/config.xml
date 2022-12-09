@@ -128,5 +128,5 @@
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
     <!-- Name of the font family to use in the default lockscreen clock -->
-    <string name="config_clockFontFamily">google-sans-clock</string>
+    <string name="config_clockFontFamily" translatable="false" />
 </resources>
