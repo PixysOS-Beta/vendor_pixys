@@ -122,10 +122,10 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
 # Quick Tap
-ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
-PRODUCT_COPY_FILES += \
-    vendor/pixys/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
-endif
+#ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+#PRODUCT_COPY_FILES += \
+#    vendor/pixys/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+#endif
 
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -187,6 +187,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pixys/overlay/common
 $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 
 # Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+#$(call inherit-product, vendor/pixel-framework/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
