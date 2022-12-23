@@ -7,7 +7,8 @@ PRODUCT_PACKAGES += \
     RepainterServicePriv \
     GameSpace \
     TouchGestures \
-    BtHelper
+    BtHelper \
+    Launcher3QuickStep
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
