@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     ClockFontAdventProOverlay \
     ClockFontBigNoodleTiltingOverlay \
     ClockFontCherrySwashOverlay \
+    ClockFontGoogleSansOverlay \
     ClockFontHeadlineOverlay \
     ClockFontRoadRageOverlay \
     ClockFontSnowstormOverlay \
