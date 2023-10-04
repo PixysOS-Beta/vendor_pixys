@@ -19,21 +19,21 @@ PIXYS_BUILD_TYPE := UNOFFICIAL
 
 endif
 
-ifeq ($(PIXYS_BUILD_TYPE), OFFICIAL)
+#ifeq ($(PIXYS_BUILD_TYPE), OFFICIAL)
 
-PRODUCT_PACKAGES += \
-    Updater
+#PRODUCT_PACKAGES += \
+#    Updater
 
 # Sign with our private keys
-$(call inherit-product, vendor/security/pixys/keys.mk)
+#$(call inherit-product, vendor/security/pixys/keys.mk)
 
-endif
+#endif
 
 TARGET_PRODUCT_SHORT := $(subst pixysos_,,$(PIXYS_BUILD))
 
 # Gapps
-$(call inherit-product, vendor/gms/products/gms.mk)
-PIXYS_EDITION := GAPPS
+#$(call inherit-product, vendor/gms/products/gms.mk)
+PIXYS_EDITION := VANILLA
 PIXYS_BUILD_DATETIME := $(shell date +%s)
 PIXYS_BUILD_DATE := $(shell date -d @$(PIXYS_BUILD_DATETIME) +"%Y%m%d-%H%M%S")
 PIXYS_VERSION := PixysOS-$(PIXYS_MOD_VERSION)-$(PIXYS_EDITION)-$(PIXYS_BUILD)-$(PIXYS_BUILD_TYPE)-$(PIXYS_BUILD_DATE)
