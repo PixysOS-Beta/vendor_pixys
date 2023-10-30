@@ -184,4 +184,7 @@ $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 # Pixel Framework
 #$(call inherit-product, vendor/pixel-framework/config.mk)
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/pixys/prebuilts
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
