@@ -18,6 +18,16 @@ PRODUCT_PACKAGES += \
     Aperture
 endif
 
+# Lockscreen clock plugins
+PRODUCT_PACKAGES += \
+    SystemUIClocks-BigNum \
+    SystemUIClocks-Calligraphy \
+    SystemUIClocks-Flex \
+    SystemUIClocks-Growth \
+    SystemUIClocks-Inflate \
+    SystemUIClocks-NumOverlap \
+    SystemUIClocks-Weather
+
 # TextClassifier
 PRODUCT_PACKAGES += \
 	libtextclassifier_annotator_en_model \
