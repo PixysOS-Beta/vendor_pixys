@@ -19,13 +19,13 @@ PIXYS_BUILD_TYPE := UNOFFICIAL
 
 endif
 
-ifeq ($(PIXYS_BUILD_TYPE), OFFICIAL)
+ifeq ($(PIXYS_BUILD_TYPE), BETA)
 
 PRODUCT_PACKAGES += \
-    Updater
+    LocalUpdater
 
 # Sign with our private keys
-$(call inherit-product, vendor/security/pixys/keys.mk)
+#$(call inherit-product, vendor/security/pixys/keys.mk)
 
 endif
 
