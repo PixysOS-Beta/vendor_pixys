@@ -6,8 +6,7 @@ PRODUCT_PACKAGES += \
     RepainterServicePriv \
     GameSpace \
     TouchGestures \
-    BtHelper \
-    ParanoidHub
+    BtHelper
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
