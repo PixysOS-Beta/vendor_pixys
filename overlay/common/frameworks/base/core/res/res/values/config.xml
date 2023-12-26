@@ -170,6 +170,13 @@
             Device Personalization Services (AiAi)
         -->
 
+
+        <item>device_personalization_services/Attention__accel_sensor_enabled=false</item>
+        <item>device_personalization_services/Attention__enabled=true</item>
+        <item>device_personalization_services/Attention__proximity_sensor_enabled=true</item>
+
+        <item>attention_manager_service/enable_flip_to_screen_off=true</item>
+
         <!-- Live Caption (Pixel 2017 + OEM) -->
         <item>device_personalization_services/Captions__enable_augmented_modality=true</item>
         <item>device_personalization_services/Captions__enable_augmented_modality_input=true</item>
