@@ -4,7 +4,6 @@ PRODUCT_PACKAGES += \
     AvoidAppsInCutoutOverlay \
     SettingsIntelligenceGoogle \
     RepainterServicePriv \
-    GameSpace \
     TouchGestures \
     BtHelper \
     BatteryStatsViewer

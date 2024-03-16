@@ -166,7 +166,7 @@ endif
 TARGET_SUPPORTS_GOOGLE_BATTERY ?= false
 
 # faceunlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
+TARGET_FACE_UNLOCK_SUPPORTED ?= false
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 
 PRODUCT_PACKAGES += \
@@ -186,7 +186,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pixys/overlay/common
 $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 
 # Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+#$(call inherit-product, vendor/pixel-framework/config.mk)
 
 # Microsoft
 $(call inherit-product-if-exists, vendor/microsoft/packages.mk)
