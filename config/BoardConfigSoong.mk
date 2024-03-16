@@ -35,13 +35,7 @@ SOONG_CONFIG_pixysGlobalVars += \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     camera_needs_client_info_lib \
-    disable_postrender_cleanup \
-    has_legacy_camera_hal1 \
-    has_memfd_backport \
-    ignores_ftp_pptp_conntrack_failure \
     needs_camera_boottime \
-    needs_netd_direct_connect_rule \
-    target_alternative_futex_waiters \
     camera_uses_newer_hidl_override_format \
     sdmcore_has_is_display_hw_available_func \
     target_health_charging_control_charging_path \
@@ -53,10 +47,7 @@ SOONG_CONFIG_pixysGlobalVars += \
     target_health_charging_control_supports_toggle \
     target_init_vendor_lib \
     target_ld_shim_libs \
-    target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib \
-    target_uses_prebuilt_dynamic_partitions \
-    uses_camera_parameter_lib \
     uses_oplus_camera \
     uses_nothing_camera
 
@@ -66,17 +57,10 @@ SOONG_CONFIG_pixysNvidiaVars += \
 
 SOONG_CONFIG_NAMESPACES += pixysQcomVars
 SOONG_CONFIG_pixysQcomVars += \
-    legacy_hw_disk_encryption \
-    should_wait_for_qsee \
     qti_vibrator_effect_lib \
     qti_vibrator_use_effect_stream \
     supports_extended_compress_format \
-    supports_hw_fde \
-    supports_hw_fde_perf \
-    no_camera_smooth_apis \
-    uses_pre_uplink_features_netmgrd \
-    uses_qcom_bsp_legacy \
-    uses_qti_camera_device
+    uses_pre_uplink_features_netmgrd
 
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
@@ -86,23 +70,10 @@ endif
 
 # Soong bool variables
 SOONG_CONFIG_pixysGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
-SOONG_CONFIG_pixysGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
-SOONG_CONFIG_pixysGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
-SOONG_CONFIG_pixysGlobalVars_has_memfd_backport := $(TARGET_HAS_MEMFD_BACKPORT)
-SOONG_CONFIG_pixysGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)
 SOONG_CONFIG_pixysGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
-SOONG_CONFIG_pixysGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
-SOONG_CONFIG_pixysGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_pixysNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
-SOONG_CONFIG_pixysQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
-SOONG_CONFIG_pixysQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_pixysQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
-SOONG_CONFIG_pixysQcomVars_supports_hw_fde := $(TARGET_HW_DISK_ENCRYPTION)
-SOONG_CONFIG_pixysQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_PERF)
-SOONG_CONFIG_pixysQcomVars_no_camera_smooth_apis := $(TARGET_HAS_NO_CAMERA_SMOOTH_APIS)
 SOONG_CONFIG_pixysQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
-SOONG_CONFIG_pixysQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
-SOONG_CONFIG_pixysQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_pixysGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_pixysGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_pixysGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
@@ -126,7 +97,6 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS ?= true
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE ?= false
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE ?= true
 TARGET_INIT_VENDOR_LIB ?= vendor_init
-TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
 TARGET_QTI_VIBRATOR_EFFECT_LIB ?= libqtivibratoreffect
 TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC ?= true
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
@@ -136,10 +106,7 @@ SOONG_CONFIG_pixysGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITI
 SOONG_CONFIG_pixysGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_pixysGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_pixysGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
-SOONG_CONFIG_pixysGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_pixysGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
-SOONG_CONFIG_pixysGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
-SOONG_CONFIG_pixysGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
 SOONG_CONFIG_pixysGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)
 SOONG_CONFIG_pixysGlobalVars_target_health_charging_control_charging_path := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH)
 SOONG_CONFIG_pixysGlobalVars_target_health_charging_control_charging_enabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED)
